@@ -139,12 +139,12 @@ setSelected(
 }
 
 const formatCSV = () => {
-const data = [["Name"]]
-peopleContact.forEach((item) => {
-data.push([item])
+const datasss = [["Name"]]
+data.forEach((item) => {
+datasss.push([item])
 })
 
-return data
+return datasss
 }
 
 const uncheck = index => {
