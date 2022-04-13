@@ -138,6 +138,15 @@ setSelected(
 )
 }
 
+const formatCSV = () => {
+const data = [["Name"]]
+peopleContact.forEach((item) => {
+data.push([item])
+})
+
+return data
+}
+
 const uncheck = index => {
     setSelected(selected.filter(item => item !== index))
 }
@@ -162,10 +171,10 @@ else setSelected(data.map((e, i) => i))
         <div className="flex--container
         ">
             <div className="export">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20" height="20"> 
+                <CSVLink data={formatCSV()} target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20" height="20"> 
                 <path d="M192 312C192 298.8 202.8 288 216 288H384V160H256c-17.67 0-32-14.33-32-32L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48v-128H216C202.8 336 192 325.3 192 312zM256 0v128h128L256 0zM568.1 295l-80-80c-9.375-9.375-24.56-9.375-33.94 0s-9.375 24.56 0 33.94L494.1 288H384v48h110.1l-39.03 39.03C450.3 379.7 448 385.8 448 392s2.344 12.28 7.031 16.97c9.375 9.375 24.56 9.375 33.94 0l80-80C578.3 319.6 578.3 304.4 568.1 295z" fill='#50C469'/>
                 </svg>
-                <CSVDownload data={peopleContact} target="_blank" />;
+                </CSVLink>
                 </div>
         <div className="trash" onClick={deleteAll}>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z" fill='red'/></svg></div>
         </div></th>
