@@ -186,7 +186,7 @@ else setSelected(data.map((e, i) => i))
             span class="checkbox__input">
             <input type="checkbox" name="checkbox" checked={isCheckedAll} onChange={checkAll}/>
             <span class="checkbox__control">
-                <svg className={`${isOpen ? "show-tick" : "remove-tick"}`}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
+                <svg className={`${isOpen ? "show-tick" : "remove-tick"}`}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#5293D5"><path fill="none" stroke="#5293D5" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
     </th>
   
   </tr>
@@ -207,7 +207,7 @@ else setSelected(data.map((e, i) => i))
             // alert("click")
         }}  ref={ref}/>
             <span class="checkbox__control">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="#5293D5" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
     </td>
   </tr>
 )

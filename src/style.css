@@ -100,7 +100,7 @@ th {
   width: 0.5em;
   height: 0.5em;
   border-radius: 3px;
-  border: 2px solid #9f9f9f;
+  border: 1px solid #9f9f9f;
 }
 
 .checkbox__control svg {
