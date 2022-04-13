@@ -165,7 +165,7 @@ else setSelected(data.map((e, i) => i))
 <div className="main--container">
  <div className="table--container">
      <table className="contact-list">
-  <tr >
+  <tbody><tr >
     <th><h1>Contacts</h1></th>
     <th className='icon-table-icons'>
         <div className="flex--container
@@ -181,12 +181,12 @@ else setSelected(data.map((e, i) => i))
 
     <th className='icon-table' >
         
-        <label class="checkbox"  >
+        <label className="checkbox"  >
             <
-            span class="checkbox__input">
+            span className="checkbox__input">
             <input type="checkbox" name="checkbox" checked={isCheckedAll} onChange={checkAll}/>
-            <span class="checkbox__control">
-                <svg className={`${isOpen ? "show-tick" : "remove-tick"}`}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#5293D5"><path fill="none" stroke="#5293D5" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
+            <span className="checkbox__control">
+                <svg className={`${isOpen ? "show-tick" : "remove-tick"}`}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#5293D5"><path fill="none" stroke="#5293D5" strokeWidth="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
     </th>
   
   </tr>
@@ -198,20 +198,20 @@ else setSelected(data.map((e, i) => i))
     <td>{item}</td>
     <td></td>
     <td className="icon-table">
-        <label class="checkbox input-child" >
-            <span class="checkbox__input " >
+        <label className="checkbox input-child" >
+            <span className="checkbox__input " >
             <input type="checkbox" name="checkbox" checked={checked} onChange={(e) => {
             // onClickHandlerCurrent(e, indexed)
             if(checked) uncheck(indexed)
             else checkItem(indexed)
             // alert("click")
         }}  ref={ref}/>
-            <span class="checkbox__control">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="#5293D5" stroke-width="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
+            <span className="checkbox__control">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="#5293D5" strokeWidth="3" d="M1.73 12.91l6.37 6.37L22.79 4.59"></path></svg></span></span></label>
     </td>
   </tr>
 )
-})}
+})}</tbody>
  
 </table>
  </div>
